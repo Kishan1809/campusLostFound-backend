@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js",
-  "dev": "nodemon server.js"
-},
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,10 +16,19 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.2",
+    "mongodb": "^7.4.0",
+    "mongoose": "^9.7.3",
     "multer": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend/issues"
+  },
+  "homepage": "https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend#readme"
 }
