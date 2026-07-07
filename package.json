@@ -26,11 +26,10 @@
     "nodemon": "^3.1.14"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend.git"
-  },
-  "bugs": {
-    "url": "https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend/issues"
-  },
-  "homepage": "https://github.com/AditiMurgude22/Campus-Lost-And-Found-backend#readme"
-}
+  "type": "git",
+  "url": "git+https://github.com/Kishan1809/campusLostFound-backend.git"
+},
+"bugs": {
+  "url": "https://github.com/Kishan1809/campusLostFound-backend/issues"
+},
+"homepage": "https://github.com/Kishan1809/campusLostFound-backend#readme"
