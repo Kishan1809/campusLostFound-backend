@@ -59,7 +59,7 @@ exports.createItem = async (req, res) => {
       location,
       date: date || new Date(),
       status: status || "Open",
-      image: req.file ? req.file.filename : "",
+      image: req.file ? req.file.path : "",
       reportedBy: req.user._id || req.user.id, // ✅ handle both formats
     });
 
@@ -224,19 +224,7 @@ exports.deleteItem = async (req, res) => {
       });
     }
 
-    // Delete uploaded image file if it exists.
-    if (item.image) {
-      const fs = require("fs");
-      const path = require("path");
 
-      const uploadsDir = path.join(__dirname, "..", "uploads");
-      const filename = String(item.image).replace(/^.*[\\/]/, ""); // keep only basename
-      const filePath = path.join(uploadsDir, filename);
-
-      if (fs.existsSync(filePath)) {
-        fs.unlinkSync(filePath);
-      }
-    }
 
     await item.deleteOne();
 
